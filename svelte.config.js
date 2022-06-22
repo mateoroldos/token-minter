@@ -14,6 +14,11 @@ const config = {
   // See the available options at https://github.com/sveltejs/vite-plugin-svelte/blob/main/docs/config.md
   kit: {
     adapter: adapter(),
+    vite: {
+      ssr: {
+        noExternal: ['three'],
+      },
+    },
   },
 };
 

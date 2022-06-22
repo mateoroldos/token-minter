@@ -20,3 +20,4 @@ export { default as NumberBall } from './NumberBall.svelte';
 export { default as NavigationStep } from './NavigationStep.svelte';
 export { default as TransparentCard } from './TransparentCard.svelte';
 export { default as NFTGuideGrid } from './NFTGuideGrid.svelte';
+export { default as EmeraldOne } from './EmeraldOne.svelte';

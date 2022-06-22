@@ -1,6 +1,6 @@
 <script>
 	import Icon from "@iconify/svelte";
-	import { Section, Container, Button, AdaptableGrid, Marquee, Stack } from "$lib/components/atoms/index";
+	import { Section, Container, Button, AdaptableGrid, Marquee, Stack, EmeraldOne } from "$lib/components/atoms/index";
 </script>
 
 <Section class="padding-top-small">
@@ -15,11 +15,9 @@
 				<Button>Start</Button>
 			</Stack>
 			<Stack align="center" justify="center">
-				<video width="100%" height="100%" autoplay loop muted>
-					<source src="emerald.webm" type="video/webm">
-					<track kind="captions"/>
-					Your browser does not support the video tag.
-				</video>
+				<!-- <div style="height: 100%; width:100%; background-color: purple;"> -->
+					<EmeraldOne/>
+				<!-- </div> -->
 			</Stack>
 		</AdaptableGrid>
 	</Container>
