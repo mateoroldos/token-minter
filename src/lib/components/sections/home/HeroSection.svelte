@@ -1,5 +1,6 @@
 <script>
 	import Icon from "@iconify/svelte";
+	import { Canvas } from "threlte";
 	import { Section, Container, Button, AdaptableGrid, Marquee, Stack, EmeraldOne } from "$lib/components/atoms/index";
 </script>
 
@@ -15,9 +16,11 @@
 				<Button>Start</Button>
 			</Stack>
 			<Stack align="center" justify="center">
-				<!-- <div style="height: 100%; width:100%; background-color: purple;"> -->
-					<EmeraldOne/>
-				<!-- </div> -->
+				<div class="three-d-wrapper">
+					<Canvas>
+						<EmeraldOne/>
+					</Canvas>
+				</div>
 			</Stack>
 		</AdaptableGrid>
 	</Container>
@@ -40,6 +43,15 @@
 		span {
 			color: var(--clr-accent-main);
 		}
+	}
+
+	.three-d-wrapper {
+		background-color: var(--clr-accent-soft-t9);
+		border: 0.5px var(--clr-accent-main-t8) solid;
+		border-radius: 1em;
+		height: 100%;
+		width: 100%;
+
 	}
 
   .marquee-element {
